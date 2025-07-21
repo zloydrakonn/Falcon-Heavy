@@ -8,7 +8,8 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff
+    color: #fff;
+    background: #000;
 }
 
 .container {
@@ -218,4 +219,36 @@ html {
 
 .contact-button:active {
     transform: translateY(1px);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        position: relative;
+        width: 768px;
+    }
+    .earth {
+    width: 768px;
+    height: 536px;
+    }
+    .rocket {
+        position: absolute;
+        top: 870px;
+        left: 195px;
+        width: 368px;
+        height: 982px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        position: relative;
+        width: 360px;
+    }
+    .earth {
+    width: 360px;
+    height: 252px;
+    }
+    .rocket {
+
+    }
 }
