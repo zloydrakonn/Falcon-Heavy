@@ -240,12 +240,168 @@ html {
 }
 
 @media screen and (max-width: 360px) {
-    .container {
-        position: relative;
-        width: 360px;
-    }
-    .earth {
+  .container {
     width: 360px;
-    height: 252px;
-    }
+    height: 2500px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .header {
+    height: 80px;
+  }
+
+  .header-content {
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+
+  .nav {
+    gap: 3px;
+  }
+
+  .link {
+    font-size: 10px;
+  }
+
+  .main-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-text {
+    position: absolute;
+    top: 150px;
+    width: 90%;
+  }
+
+  .falcon-heavy {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .flacon-sub {
+    font-size: 12px;
+    text-align: center;
+    width: 80%;
+    height: auto;
+  }
+
+  .line {
+    position: absolute;
+    top: 300px;
+    width: 40px;
+    height: 1.5px;
+    transform: rotate(90deg);
+    z-index: 2;
+  }
+
+  .earth {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 300px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .rocket {
+    position: absolute;
+    width: 280px;
+    height: auto;
+    top: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .over {
+    font-size: 18px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .specs-all {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 180%;
+    position: absolute;
+    top: 1500px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-around;
+  }
+
+  .specs-name {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 0;
+    gap: 8px;
+  }
+
+  .specs {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 0;
+    gap: 8px;
+  }
+
+  .description {
+    font-size: 12px;
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 2000px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 10px;
+  }
+  .overview-text {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .footer-content {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .social-media {
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .spacex1 {
+    width: 100px;
+    height: auto;
+  }
+
+  .contact-button {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+  }
 }
