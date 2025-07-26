@@ -16,15 +16,18 @@
                 <a href=""><img class="logo" src="spacex.png" alt="SpaceX Logo"></a>
 
                 <ul class="nav">
+                    <li class="nav-item"><button class="lang-button" onclick="translateToUk()">UK</button></li>
+                    <li class="nav-item"><button class="lang-button" onclick="translateToEn()">EN</button></li>
                     <li class="nav-item"><a href="" class="link">Falcon 9</a></li>
                     <li class="nav-item"><a href="#overview" class="link">Falcon Heavy</a></li>
                     <li class="nav-item"><a href="" class="link">Dragon</a></li>
-                    <li class="nav-item"><a href="" class="link">Updates</a></li>
+                    <li class="nav-item"><a href="" class="link translatable" data-key="updates">Updates</a></li>
                 </ul>
-                <ul class="nav">
-                    <li class="nav-item"><a href="" class="link gray-text">About</a></li>
-                    <li class="nav-item"><a href="" class="link gray-text">Gallery</a></li>
-                    <li class="nav-item"><a href="" class="link gray-text">Shop</a></li>
+                <ul class="nav second-row">
+                    <li class="nav-item"><a href="" class="link gray-text translatable" data-key="about">About</a></li>
+                    <li class="nav-item"><a href="" class="link gray-text translatable" data-key="gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item"><a href="" class="link gray-text translatable" data-key="shop">Shop</a></li>
                 </ul>
 
             </div>
@@ -33,23 +36,24 @@
             <div class="main-content">
                 <div class="main-text">
                     <p class="falcon-heavy">Falcon Heavy</p>
-                    <p class="flacon-sub">The most powerful operational rocket in the world by a factor of two</p>
+                    <p class="flacon-sub translatable" data-key="falconHeavySub">The most powerful operational rocket in
+                        the world by a factor of two</p>
                 </div>
                 <img src="line.png" alt="" class="line">
-                <img src="earth.png" alt="" class="earth" title="This is Earth.">
+                <img src="earth.png" alt="" class="earth">
             </div>
         </main>
         <section class="falcon">
             <div class="falcon-content">
                 <div class="specs-all">
-                    <p class="over" id="overview">Falcon Heavy Overview</p>
+                    <p class="over translatable" id="overview" data-key="overviewTitle">Falcon Heavy Overview</p>
                     <div class="specs-name">
-                        <p>HEIGHT</p>
-                        <p>DIAMETER</p>
-                        <p>MASS</p>
-                        <p>PAYLOAD TO LEO</p>
-                        <p>PAYLOAD TO GTO</p>
-                        <p>PAYLOAD TO MARS</p>
+                        <p class="translatable" data-key="height">HEIGHT</p>
+                        <p class="translatable" data-key="diameter">DIAMETER</p>
+                        <p class="translatable" data-key="mass">MASS</p>
+                        <p class="translatable" data-key="payloadLeo">PAYLOAD TO LEO</p>
+                        <p class="translatable" data-key="payloadGto">PAYLOAD TO GTO</p>
+                        <p class="translatable" data-key="payloadMars">PAYLOAD TO MARS</p>
                     </div>
                     <div class="specs">
                         <p>70 m / <span class="gray-text">229.6 ft</span></p>
@@ -61,8 +65,9 @@
                     </div>
                 </div>
                 <div class="description">
-                    <p class="over ">UNMATCHED PERFORMANCE</p>
-                    <p class="overview-text">With more than 5 million pounds of thrust at liftoff, Falcon Heavy is the
+                    <p class="over translatable" data-key="unmatchedPerformanceTitle">UNMATCHED PERFORMANCE</p>
+                    <p class="overview-text translatable" data-key="unmatchedPerformanceText">With more than 5 million
+                        pounds of thrust at liftoff, Falcon Heavy is the
                         most
                         capable rocket
                         flying. By comparison, the liftoff thrust of the Falcon Heavy equals approximately eighteen 747
@@ -71,7 +76,7 @@
                         passengers, luggage and
                         fuel—to orbit.</p>
                 </div>
-                <img src="rocket.png" class="rocket" title="Falcon Heavy">
+                <img src="rocket.png" class="rocket">
             </div>
         </section>
         <footer class="footer">
@@ -83,14 +88,16 @@
                     <li><a href="" class="social-media link">Instagram</a></li>
                     <li><a href="" class="social-media link">Flickr</a></li>
                     <li><a href="" class="social-media link">LinkedIn</a></li>
-                    <li><a href="" class="social-media link">Privacy</a></li>
-                    <li><a href="" class="social-media link">Policy</a></li>
+                    <li><a href="" class="social-media link translatable" data-key="privacy">Privacy</a></li>
+                    <li><a href="" class="social-media link translatable" data-key="policy">Policy</a></li>
                 </div>
-                <p class="gray-text social-media">For additional questions, contact rideshare@spacex.com</p>
-                <button class="contact-button">Contact Us</button>
+                <p class="gray-text social-media translatable" data-key="contactEmail">For additional questions, contact
+                    rideshare@spacex.com</p>
+                <button class="contact-button translatable" data-key="contactUsButton">Contact Us</button>
             </div>
         </footer>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
