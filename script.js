@@ -71,3 +71,11 @@ function translateToEn() {
 document.addEventListener('DOMContentLoaded', () => {
   translateToUk();
 });
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    const container = document.querySelector('.container');
+    setTimeout(() => {
+        loader.style.opacity = '0';
+        container.style.opacity = '1';
+    }, 2000); // 2 секунди
+});
